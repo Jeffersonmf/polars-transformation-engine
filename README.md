@@ -1,12 +1,9 @@
 ---
-@autor Jefferson Marchetti
+autor Jefferson Marchetti
 For now these are the dependencies to others repositories.
-
 ---
 
 # BrandLovrs POLARS Transformation Layer
-
-
 
 **This module "Doorman" has the objective to monitor each trigger event received through the Broker (Kafka), to then validate its data structure, mainly the Entity_id and Entity_type fields to trigger the next step of flow "Foreman", storing it in Redis as a valid Trigger.**
 
