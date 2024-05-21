@@ -1,0 +1,30 @@
+
+
+
+TRIGGER:Mellishops:635ca00b933d0d001e5da80b
+
+
+{"trigger_name": "Mellishops", id: "00", entity_id: "323232", `key": "238928392", "entity_type": "ddddd", "value": "rigger_event_value"}
+ 
+ 
+ 
+ 
+4 validation errors for Mellishops
+id
+  Field required [type=missing, input_value={'trigger_name': 'Mellish...: 'trigger_event_value'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+entity_id
+  Field required [type=missing, input_value={'trigger_name': 'Mellish...: 'trigger_event_value'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+entity_type
+  Field required [type=missing, input_value={'trigger_name': 'Mellish...: 'trigger_event_value'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+data
+  Field required [type=missing, input_value={'trigger_name': 'Mellish...: 'trigger_event_value'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+    
+    
+    
+echo "TRIGGER:Mellishops:635ca00b933d0d001e5da80b={\"trigger_name\": \"Mellishops\", \"id\": \"00\", \"entity_id\": \"323232\", \"key\": \"238928392\", \"entity_type\": \"mellishops\", \"value\": \"trigger_event_value\", \"data\": {\"key\": \"000\", \"value\": \"dsdsdsd\"}}" | kcat -b localhost:9092 -t MELLISHOPS -P -K =
+echo "TRIGGER:Mellishops:635ca00b933d0d001e5da80c={\"trigger_name\": \"Mellishops\", \"id\": \"00\", \"entity_id\": \"323232\", \"key\": \"238928392\", \"entity_type\": \"mellishops\", \"value\": \"trigger_event_value\", \"data\": {\"key\": \"000\", \"value\": \"dsdsdsd\"}}" | kcat -b localhost:9092 -t MELLISHOPS -P -K =
+echo "TRIGGER:Vtex:635ca00b933d0d001e5da80b={\"trigger_name\": \"Vtex\", \"id\": \"00\", \"entity_id\": \"323232\", \"key\": \"238928392\", \"entity_type\": \"mellishops\", \"value\": \"trigger_event_value\", \"data\": {\"key\": \"000\", \"value\": \"dsdsdsd\"}}" | kcat -b localhost:9092 -t VTEX -P -K =
